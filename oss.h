@@ -2,24 +2,20 @@
  * oss.h by Pascal Odijk 11/29/2021
  * P6 CMPSCI 4760 Prof. Bhatia
  *
- *  Header file for oss.c, contains function prototypes and structures.
+ *  Header file for oss.c, contains the function prototypes.
  */
 
 #ifndef OSS_H
 #define OSS_H
 
 #define SECOND_TIMER 100
-
-typedef struct Message {
-	long msgSize;
-	char msgString[100];
-} Message;
+#define PROCESS_MAX 18
 
 // Function prototypes
 void helpMessage();
 void killTimer();
 void catchSegFault();
-void forkTime();
+void doFork();
 int checkArray();
 
 #endif
